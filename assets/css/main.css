@@ -2637,7 +2637,7 @@ input, select, textarea {
 			margin-top: 10%;
 			margin-left: auto;
 			margin-right: auto;
-			width: 50%
+			width: 60%
 		}
 
 			.image.main:first-child {
@@ -3795,7 +3795,7 @@ input, select, textarea {
 
 			#main > .
 
-			 header.major > h1, #main > .post header.major h2 {
+			header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
@@ -4712,14 +4712,22 @@ input, select, textarea {
 
 .standout {
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 15px;
 	color: black;
 }
 
 .bigger {
-	font-size: 20px;
+	font-size: 15px;
+}
+
+.biggerest {
+	font-size: 17px;
 }
 
 #quote{
 	font-style: italic;
+}
+
+.row {
+	margin-bottom: 50px;
 }
