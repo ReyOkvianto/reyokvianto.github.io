@@ -86,6 +86,10 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
   border: 8px solid #2c2f3f;
 }
 
@@ -228,7 +232,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Hero-Desktop2.jpg") center;
+  background: url("../img/Background.png") center 20%;
   background-size: cover;
 }
 
@@ -603,16 +607,12 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
+  opacity: 0;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: 0;
+  opacity: 0;
+  bottom: -60px;
 }
 
 /*--------------------------------------------------------------
@@ -719,6 +719,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  color: #343a40;
 }
 
 .services .title a {
@@ -746,7 +747,7 @@ section {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
-  min-height: 320px;
+  min-height: 380px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -825,6 +826,86 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
+}
+
+.testimonials .testimonial-read-more {
+  display: inline-block;
+  margin: -10px 0 18px;
+  padding: 0;
+  color: #149ddd;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.testimonials .testimonial-read-more:hover {
+  color: #37b3ed;
+  text-decoration: underline;
+}
+
+.testimonials .testimonial-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #149ddd;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+#testimonialModal .modal-body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+#testimonialModal .modal-body p {
+  margin-bottom: 1rem;
+}
+
+#testimonialModal .modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-info-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #050d18;
+}
+
+.portfolio .portfolio-info-text p {
+  font-size: 14px;
+  color: #5a6a7b;
+  margin-bottom: 24px;
+}
+
+.contact .contact-ctas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 4px;
+}
+
+.contact .info .email p a,
+.contact .info .phone p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact .info .email p a:hover,
+.contact .info .phone p a:hover {
+  color: #149ddd;
 }
 
 /*--------------------------------------------------------------
